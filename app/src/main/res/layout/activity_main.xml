@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map">
+
+        <Button
+            android:id="@+id/btnScreenshot"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/snimi_fotografiju" />
+
+        <TextView
+            android:id="@+id/tvWidth"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/geografska_sirina"/>
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/geografska_duzina"/>
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/drzava"/>
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/mjesto"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/adresa"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

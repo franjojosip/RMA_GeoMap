@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gdje sam?</string>
+    <string name="google_maps_key"></string>
+    <string name="snimi_fotografiju">Snimi fotografiju</string>
+    <string name="geografska_sirina">Geografska širina:</string>
+    <string name="geografska_duzina">Geografska dužina:</string>
+    <string name="drzava">Država:</string>
+    <string name="adresa">Adresa:</string>
+    <string name="mjesto">Mjesto:</string>
+    <string name="channelId">ht.ferit.fjjukic.rma_lv5_2:</string>
+    <string name="notificationTitle">Saved image notification</string>
+</resources>
